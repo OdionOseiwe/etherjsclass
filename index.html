@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethers</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./ethers.js"  type="module" defer></script>
+    <script src="./app.js"  type="module" defer></script>
+    <script src="./tab.js"  type="module" defer></script>
+</head>
+<body>
+
+
+    <div>
+      <div class="head">list of tokens</div>
+      <div id="connect">connect </div> <div id="userAdd"></div>
+      <div id="load"></div> 
+      <div class="div">
+        <div class="btns">
+          <button class="tokens" onclick="openPage('Token', this, 'rgb(243, 141, 141)')" id="defaultOpen">tokens</button>
+          <button class="tokens"  onclick="openPage('Send', this, 'rgb(168, 235, 168)')">send</button>
+        </div>
+        <div id="Token" class="tabs"></div>
+        <div id="Send"  class="tabs">
+          <input type="text" class="amount" placeholder="amount">
+          <input type="text" class="address" placeholder="address">
+          <button id="sendToken">send</button>
+        </div>
+      </div>
+    </div> 
+</body>
+
+<script>
+  function openPage(pageName,ele,color) {
+    var i, tabs, tokens;
+    tabs = document.getElementsByClassName("tabs");
+    for (i = 0; i < tabs.length; i++) {
+      tabs[i].style.display = "none";
+    }
+    tokens = document.getElementsByClassName("tokens");
+    for (i = 0; i < tokens.length; i++) {
+      tokens[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    ele.style.backgroundColor = color;
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>
+</html>

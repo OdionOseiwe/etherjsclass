@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.div{
+   min-height: 50vh;
+    width: 50%;
+    border: 1px solid black;
+    margin: 5rem 50rem;
+    font-size: 2rem;
+}
+
+.btns{
+    display: flex;
+}
+
+.tokens{
+    width: 50%;
+    height: 5rem;
+    border: none;
+    outline: none;
+}
+
+#load{
+   font-size: 2rem;
+}
+
+  .tokens:hover {
+    background-color: #777;
+    border: none;
+  }
+
+.head{
+    text-align: center;
+    font-size: 4rem;
+}
+
+#connect, #userAdd{
+    font-size: 3rem;
+    text-align: center;
+    width: 30rem;
+    text-align: center;
+    margin-left: 75rem;
+}
+
+.tabs{
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+
+  .address, .amount{
+    width: 45rem;
+    height: 5rem;
+    background-color: green;
+    padding: 3rem;
+  }
+
+  #sendToken{
+     font-size: 3rem;
+     border: 3px solid green;
+     padding: 1rem;
+     display: block;
+     width: 99%;
+     margin-top: 5rem;
+     text-transform: uppercase;
+  }
+
+#Token {background-color: rgb(243, 141, 141);}
+#Send {background-color: rgb(168, 235, 168);}
+
+.tokenDe{
+  display: flex;
+}
+
+.tokenName{
+  margin-right: auto;
+}
+
+.tokenName{
+  margin-right: auto;
+}
